@@ -52,7 +52,7 @@ export default {
   publicRuntimeConfig: {
     API_BASE_URL: process.env.API_BASE_URL
   },
-  
+
   axios: {
     proxy: true
   },
@@ -72,4 +72,8 @@ export default {
       }
     ]
   },
+
+  server: {
+    host: '0.0.0.0'
+  }
 }
