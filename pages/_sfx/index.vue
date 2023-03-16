@@ -38,7 +38,8 @@ export default {
   name: 'SfxPage',
 
   data() {
-    fetch('http://localhost:8080/api/sfx')
+    console.log(this.$config.API_BASE_URL + '/sfx')
+    fetch(this.$config.API_BASE_URL + '/sfx')
       .then(response => response.json())
       .then(data => {
         this.sfx = data

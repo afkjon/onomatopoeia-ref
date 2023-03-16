@@ -40,7 +40,8 @@ export default {
   name: 'SfxPage',
 
   data() {
-    axios.get('http://localhost:8080/api/sfx/search?query=' + this.$route.params.slug)
+    axios.get(process.env.API_BASE_URL + '/sfx/search?query=' + this.$route.params.slug)
+    //axios.get('http://localhost:8080/api/sfx/search?query=' + this.$route.params.slug)
       .then(response => {
         this.sfx = response.data
       })

@@ -49,13 +49,17 @@ export default {
   build: {
   },
 
+  publicRuntimeConfig: {
+    API_BASE_URL: process.env.API_BASE_URL
+  },
+
   axios: {
     proxy: true
   },
 
-  proxy: {
-    '/api': 'http://localhost:8080'
-  },
+//  proxy: {
+//    '/api': 'http://localhost:8080'
+//  },
   toast: {
     position: 'top-center', 
     register: [ // Register custom toasts

@@ -19,7 +19,8 @@ export default {
   name: 'SfxPage',
 
   data() {
-    fetch('http://localhost:8080/api/sfx/' + this.$route.params.slug)
+    fetch(this.$config.API_BASE_URL + '/sfx/' + this.$route.params.slug)
+    //fetch('http://localhost:8080/api/sfx/' + this.$route.params.slug)
       .then(response => response.json())
       .then(data => {
         this.sfx = data
