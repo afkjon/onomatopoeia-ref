@@ -31,8 +31,8 @@ const { data } = useFetch(
       <h1 class="cell heading">Search Results</h1>
       <div class="cell">
         <p v-if="res === undefined">Error</p>
-        <p v-if="res.data.length === 0" class="no-results">No results found.</p>
-        <p v-if="res !== undefined">Found {{ res.data.value.length }} result(s).</p>
+        <p v-if="res.data.value.length === 0" class="no-results">No results found.</p>
+        <p v-if="res.data.value !== undefined">Found {{ res.data.value.length }} result(s).</p>
 
         <table aria-describedby="search results">
           <thead>
