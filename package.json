@@ -8,10 +8,10 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "^3.3.1"
+    "nuxt": "^3.2.3",
+    "@nuxt/kit": "^3.2.3"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.3.1",
     "@nuxt/nitro": "^0.10.0",
     "foundation-sites": "^6.7.5",
     "jquery": "^3.6.4",
