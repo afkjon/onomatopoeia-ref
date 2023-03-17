@@ -8,8 +8,8 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "^3.2.3",
-    "@nuxt/kit": "^3.2.3"
+    "nuxt": "3.2.3",
+    "@nuxt/kit": "3.2.3"
   },
   "dependencies": {
     "@nuxt/nitro": "^0.10.0",
